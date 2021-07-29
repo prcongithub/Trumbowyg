@@ -16,6 +16,7 @@
 
     var defaultOptions = {
         serverPath: '',
+        fileTypes: '',
         fileFieldName: 'fileToUpload',
         data: [],                       // Additional data for ajax [{name: 'key', value: 'value'}]
         headers: {},                    // Additional headers
@@ -137,7 +138,7 @@
                                     type: 'file',
                                     required: true,
                                     attributes: {
-                                        accept: 'image/*'
+                                        accept: trumbowyg.o.plugins.upload.fileTypes
                                     }
                                 },
                                 alt: {
